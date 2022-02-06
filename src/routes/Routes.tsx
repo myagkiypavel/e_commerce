@@ -6,38 +6,34 @@ import PageNotFound from "../pages/PageNotFound";
 import BuyRoutes from "./BuyRoutes";
 import OrderRoutes from "./OrderRoutes";
 import AdminRoutes from "./AdminRoutes";
-import NavBar from "../components/nav/NavBar";
 
 interface Props {}
 
 const RootRoutes: React.FC<Props> = () => {
   return (
-    <>
-      <NavBar />
-      <Switch>
-        <Route path="/buy">
-          <BuyRoutes />
-        </Route>
-        <Route path="/orders">
-          <OrderRoutes />
-        </Route>
-        <Route path="/admin">
-          <AdminRoutes />
-        </Route>
-        <Route path="/products/:id">
-          <ProductDetails />
-        </Route>
-        <Route path="/products">
-          <Products />
-        </Route>
-        <Route path="/">
-          <Index />
-        </Route>
-        <Route path="*">
-          <PageNotFound />
-        </Route>
-      </Switch>
-    </>
+    <Switch>
+      <Route path="/buy">
+        <BuyRoutes />
+      </Route>
+      <Route path="/orders">
+        <OrderRoutes />
+      </Route>
+      <Route path="/admin">
+        <AdminRoutes />
+      </Route>
+      <Route path="/products/:id">
+        <ProductDetails />
+      </Route>
+      <Route path="/products">
+        <Products />
+      </Route>
+      <Route path="/">
+        <Index />
+      </Route>
+      <Route path="*">
+        <PageNotFound />
+      </Route>
+    </Switch>
   );
 };
 
