@@ -1,7 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 import Index from "../pages/Index/Index";
 import Products from "../pages/Products";
-import ProductDetails from "../pages/ProductDetail";
+import ProductDetails from "../pages/ProductDetail/ProductDetail";
 import PageNotFound from "../pages/PageNotFound";
 import BuyRoutes from "./BuyRoutes";
 import OrderRoutes from "./OrderRoutes";
@@ -21,7 +21,7 @@ const RootRoutes: React.FC<Props> = () => {
       <Route path="/admin">
         <AdminRoutes />
       </Route>
-      <Route path="/products/:id">
+      <Route path="/products/:productId">
         <ProductDetails />
       </Route>
       <Route path="/products">

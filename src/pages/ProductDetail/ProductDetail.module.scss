@@ -1,0 +1,51 @@
+.container {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  width: 50%;
+  height: 100%;
+  border: 1px solid green;
+  img {
+    width: 100%;
+  }
+}
+
+.detail {
+  width: 50%;
+  border: 1px solid purple;
+  padding: 20px;
+}
+
+.header {
+  font-size: 30px;
+}
+
+.price {
+  span {
+    color: orange;
+  }
+}
+
+.availability {
+  span {
+    color: blue;
+  }
+}
+
+.quantity {
+  display: flex;
+  margin: 20px 0;
+  .item {
+    text-align: center;
+    min-width: 30px;
+    border: 1px solid #000;
+  }
+}
+
