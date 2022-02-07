@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 200px;
+}
+
+.img {
+  width: 200px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.price {
+  color: orange;
+}

@@ -1,5 +1,5 @@
 import { Switch, Route } from "react-router-dom";
-import Index from "../pages/Index";
+import Index from "../pages/Index/Index";
 import Products from "../pages/Products";
 import ProductDetails from "../pages/ProductDetail";
 import PageNotFound from "../pages/PageNotFound";
